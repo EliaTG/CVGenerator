@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Space Mono', monospace;
+}
+.container-fluid{
+    height: auto;
+    width: 60vw;
+    max-width: 700px;
+    border-radius: 10px;
+}
+.title{
+    background-color: black;
+}
+.FirstRow, .SecondRow, .ThirdRow{
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+}
+.form-group{
+    width: 50%;
+}
+.ThirdRow{
+    align-items: flex-end;
+}
+.form-group > div{
+    display: flex;
+    flex-direction: column;
+    margin: 0 5px;
+}
+
+input{
+    border: 1px solid #ced4da;
+    outline: none;
+    background-color: #f2f2f2;
+    padding: 7px 20px;
+    width: 100%;
+}
+label{
+    padding: 4px 6px;
+}
+textarea{
+    background-color: #f2f2f2;
+}
+.DivBtn button{
+    width: 250px;
+    height: 40px;
+    color: white;
+    background-color: black;
+    border: none;
+    margin: 10px 4px;
+}
+/* CV DOM */
+#sectionCV{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+.CvData{
+    display: flex;
+    flex-direction: row; 
+    background-color: #f2f2f2;
+    margin: 25px auto;
+    width: 80%!important;
+}
+
+.input-error{
+    border-color: red;
+    border-width: medium;
+}
+.input-success{
+    border-color: #25de51;
+    border-width: medium;
+}
+
+.leftbar{
+    margin: 0 25px 0 0;
+    width: 35%;
+    height: 100%;
+}
+.rightbar{
+   width: 65%;
+   margin: 0 0 0 50px;
+   display: block;
+}
+.pBold{
+    font-weight: bold;
+    margin: 1px;
+}
+.Line{
+    background-color: #376193;
+    width: 85%;
+    margin: 0 auto 5px 0;
+}
+div.website{
+    max-width: 350px;
+}
+.websiteHref{
+    text-decoration: none;
+}
+Span.websiteSpan{
+    color: black;
+    cursor: pointer;
+    width: 220px;
+    word-wrap: break-word;
+}
+.websiteSpan:hover{
+    color: #376193;
+    text-decoration:line-through;
+}
+.summaryP, .skillP, .experiencieP, .educationP, .certificationsP{
+    width: 90%;
+    min-height: 40px;
+    word-wrap: break-word;
+}
+
+.name{
+    text-align: center;
+    font-weight: bold;
+    margin: 100px 0 40px 5px;
+}
+.BlockBackground{
+    background-color: #376193;
+    margin: 0;
+    height: 50px;
+    width: 100%;
+}
+.changeColor,
+.CvData h2,
+.CvData h3{
+    color: #376193;
+}
+.contact{
+    margin: 35px auto;
+    width: 70%;
+    height: 450px;
+}
+.summary{
+    margin: 165px 0 20px 0;
+}
+.skill, .experiencie, .education, .certifications{
+    margin: 0 0 15px 0;
+}
+.certifications{
+    margin: 0 0 50px 0;
+}
+.RightBlock{
+    margin: 120px 0 0 0;
+}
+button.Img{
+    display: block;
+    height: 25px;
+    border: none;
+    margin: 10px 20px 0 0px;
+    outline: none;
+}
+button.whiteCan{
+    background-color: #376193;
+}
+button.blackCan{
+    background-color: #f2f2f2;
+}
+
+img.delete{
+    height: 25px;
+}
+div.languages{
+    margin: 25px 0 0 0;
+}
+.TrashCanIcon{
+    display: block;
+}
+.whiteTrashCan{
+    display: none;
+}
+
+@media only screen and (max-width: 1100px) {
+    .CvData{
+        width: 95%!important;
+    }
+}
+@media only screen and (max-width: 840px) {
+    .container-fluid{
+        width: 95vw;
+        border-radius: 10px;
+    }
+    .CvData{
+        flex-direction: column; 
+        margin: 25px auto;
+    }
+    .leftbar{
+        margin: 0;
+        width: 100%;
+    }
+    .rightbar{
+       width: 100%;
+       margin: 0;
+    }
+    .contact{
+        margin: 20px auto 0 auto;
+        width: 80%;
+        height: auto;
+    }
+    .summary{
+        width: 80%;
+        margin: 0 auto 20px auto;
+    }
+    .skill, .experiencie, .education, .certifications{
+        width: 80%;
+        margin: 0 auto 0 auto;
+    }
+    .summaryP, .skillP, .experiencieP, .educationP, .certificationsP{
+        width: 100%;
+        min-height: 35px;
+       
+    }
+    .DivBtn button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px auto;
+    }
+    .name{
+        margin: 50px 0 30px 0;
+    }
+    .Line {
+        width: 100%;
+    }
+    .TrashCanIcon{
+        display: none;
+    }
+    .whiteTrashCan{
+        display: block;
+    }
+
+  }

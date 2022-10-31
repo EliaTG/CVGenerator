@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/lib/boostrap/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/site/style.css">
+    <title>CV Generator</title>
+</head>
+<body>
+    <section class="Container d-flex justify-content-center">
+            <div class="container-fluid  mt-3 mb-5">
+                <form action="" class="MyForm mt-4" id="MyForm">
+                    <div class="card">
+                        <div class="title card-header text-center text-white">
+                            <h3>CV generator</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="FirstRow">
+                                <div class="form-group">
+                                    <div class="">
+                                        <label for="name">Your name</label>
+                                        <input type="text" class="" id="name" placeholder="Joe Doe" />
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="">
+                                        <label for="email" class="">Your email</label>
+                                        <input type="email" class="" id="email"  placeholder="example@example.com"/>
+                                    </div>
+                                </div>
+                            </div>   
+                            <div class="Summary">
+                                <div class="textarea">
+                                    <label for="summary">Summary</label>
+                                    <textarea class="form-control" rows="4" id="summary" placeholder="Let us know about you!"></textarea>
+                                </div>
+                            </div> 
+                            <div class="SecondRow">
+                                <div class="form-group">
+                                    <div class="address">
+                                        <label for="address" class="">Address</label>
+                                        <input type="name" class="" id="address" placeholder="Jardin Botanico, S.D"/>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="phone">
+                                        <label for="phone" class="">Your phone number</label>
+                                        <input type="tel" class="" id="phone"  placeholder="012-122-4113"/>
+                                    </div>
+                                </div>
+                            </div> 
+        
+                            <div class="Experiencie">
+                                <div class="textarea">
+                                    <label for="experiencie">Experiencie</label>
+                                    <textarea class="form-control" rows="4" id="experiencie"></textarea>
+                                </div>
+                            </div> 
+                            <div class="ThirdRow">
+                                <div class="form-group">
+                                    <div class="languages">
+                                        <label for="languages" class="">Languages</label>
+                                        <input type="name" class="" id="languages" placeholder="Spanish-B2" />
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="website">
+                                        <label for="website" class="">Website</label>
+                                        <input type="name" class="" id="website" placeholder="https://example.com" />
+                                    </div>
+                                </div>
+                            
+                            </div> 
+                            
+                            <div class="Education">
+                                <div class="textarea">
+                                    <label for="education">Education</label>
+                                    <textarea class="form-control"  rows="4" id="education"></textarea>
+                                </div>
+                            </div> 
+                            <div class="Skills">
+                                <div class="textarea">
+                                    <label for="skills">Skills</label>
+                                    <textarea class="form-control"  rows="4" id="skill"></textarea>
+                                </div>
+                            </div> 
+                            <div class="Certifications">
+                                <div class="textarea">
+                                    <label for="certifications">Certifications</label>
+                                    <textarea class="form-control" rows="4" id="certifications"></textarea>
+                                </div>
+                            </div> 
+                            <div class="DivBtn float-lg-end">
+                                <button type="button" class="" id="save" type="button">
+                                     <span>Save</span>
+                                </button>
+                            </div>
+                        </div>
+                  </div> 
+                </form>
+            </div>
+        </section>
+        <section id="SectionCV"></section>
+    <!-- <section class="SectionCV">
+        <div class="CvData DivHidden" id="CvData" >
+            
+            <div class="leftbar">
+                <div class="BlockBackground"></div>
+                <h1 class="name changeColor">Elia Toribio</h1>
+                <div class="contact">
+                    <h3 class="contactP">Contact</h3>
+                    <div class="line"></div> 
+                    <div class="address">
+                        <p class="pBold">Address:</p>
+                        <p class="addressP">117 Great Portland Street, London W5W 6PQ</p>
+                    </div>
+                    <div class="phone">
+                        <p class="pBold">Phone:</p>
+                        <p class="phoneP">+44 (0)20 7666 8555</p>
+                    </div>
+                    <div class="email">
+                        <p class="pBold">Email:</p>
+                        <p class="emailP">eliatorio01@gmail.com</p>
+                    </div>
+                    <div class="website">
+                        <p class="pBold">Website:</p>
+                        <a class="websiteLink" href="">https://eliatoribio.com/</a>
+                    </div>
+                </div>
+                <div class="languagues">
+                    <h3 class="languaguesP">Languagues</h3>
+                    <div class="line"></div> 
+                    <p>Spanish-B2</p>
+                    <p>English-B1</p>
+                </div>
+            </div>
+            <div class="rightbar">
+                <div class="summary">
+                    <h3>Summary</h3>
+                    <div class="line"></div> 
+                    <p class="summaryP">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                         Sed ducimus aspernatur inventore, esse voluptate tenetur! Aut sunt fugit
+                          eligendi odio? Esse, odit impedit quibusdam
+                         excepturi unde magnam consequuntur sapiente assumenda.</p>
+                </div>
+                <div class="skill">
+                    <h3>Skill Highlights</h3>
+                    <div class="line"></div> 
+                    <p class="skillP">Lorem ipsum dolor sit amet, consectetur adipisicing elit
+                        . Ipsa ullam reiciendis consectetur perferendis quam dolorem mollitia corrupti
+                         qui aliquam optio error aspernatur deserunt rerum eligendi, 
+                        dolores libero saepe dolor? Repudiandae?</p>
+                </div>
+                <div class="experiencie">
+                    <h3>Experiencie</h3>
+                    <div class="line"></div> 
+                    <p class="experiencieP">Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                        Reprehenderit blanditiis voluptatibus eos quo at nemo esse quis quisquam!
+                         Excepturi exercitationem deserunt unde.
+                         Libero ratione quas facere dignissimos aperiam aliquam asperiores.</p>
+                </div>
+                <div class="education">
+                    <h3>Education</h3>
+                    <div class="line"></div> 
+                    <p class="educationP">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo nam 
+                        veniam commodi voluptatum accusantium dolor voluptatem, doloremque sapiente 
+                        ipsum fugiat, exercitationem beatae quod fuga suscipit eligendi culpa nostrum ut.
+                    </p>
+                </div>
+                <div class="Certifications">
+                    <h3>Certifications</h3>
+                    <div class="line"></div> 
+                    <p class="certificationsP">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                        Enim excepturi ea dicta veniam earum sit nihil possimus neque nostrum
+                         voluptatum ut accusamus quos placeat repudiandae at sunt, iure saepe obcaecati!</p>
+                </div>
+                <div class="BlockBackground RightBlock"></div>
+            </div>
+
+
+
+        </div>
+    </section> -->
+    <script src="./assets/js/site/index.js" defer></script>
+</body>
+</html>
